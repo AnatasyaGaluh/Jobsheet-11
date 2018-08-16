@@ -37,5 +37,17 @@ public class praktikum2 {
         }
         String convert = vocal2Angka(kalimat);
         
+        private static void tampilPerkata(String kalimat, String convert){
+            String[] arrKal = kalimat.split(" ");
+            String[] arrCon = convert.split(" ");
+            
+            for(int i=0; i < arrKal.length; i++)
+                System.out.println(arrKal[i] + " => " + arrCon[i]);
+            tampilPerKata(kalimat,convert);
+        }
+        private static void tampilHasil(String convert){
+            System.out.println("Kalimat Alay Angka : " + convert);
+            tampilHasil(convert);
+        }
         
 }
