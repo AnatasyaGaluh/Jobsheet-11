@@ -28,5 +28,14 @@ public class praktikum2 {
     
         String kalimat = tampilInput();
         
+        private static String vocal2Angka(String kalimat){
+            char [][] arCovert = {{'a','4'}, {'i','1'}, {'u','2'}, {'e','3'}, {'o','0'}};
+            kalimat = kalimat.toLowerCase();
+            for(int i = 0; i < arCovert.length; i++)
+                kalimat = kalimat.replace(arCovert[i][0], arCovert[i][i]);
+            return kalimat;
+        }
+        String convert = vocal2Angka(kalimat);
+        
         
 }
